@@ -76,5 +76,7 @@
     display: grid;
   }
 }
+       range.oninput = () =>
+  document.body.style.setProperty('--pos', range.value + '%')
     </style>
 </html>
