@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOEY LESTYK - portfolio</title>
+    <title>Zoey Lestyk - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            font-family: 'Rubik Spray Paint', sans-serif;
+            font-family: 'Rubik Spray Paint', sans-serif; /* Preferred font with fallback */
         }
 
         section {
@@ -34,4 +34,38 @@
             width: 30%;
             margin: 10px;
             overflow: hidden;
-            
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zoey Lestyk</h1>
+        <h2>[Portfolio]</h2>
+    </header>
+
+    <section>
+        <!-- Gallery items go here -->
+        <div class="gallery-item">
+            <img src="placeholder_image1.jpg" alt="Gallery Item 1">
+        </div>
+        <div class="gallery-item">
+            <img src="placeholder_image2.jpg" alt="Gallery Item 2">
+        </div>
+        <div class="gallery-item">
+            <img src="placeholder_image3.jpg" alt="Gallery Item 3">
+        </div>
+        <!-- Add more gallery items as needed -->
+    </section>
+
+</body>
+</html>
