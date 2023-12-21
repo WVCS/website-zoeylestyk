@@ -3,22 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Zoey Lestyk - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
-
-    <!-- Include Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
     <style>
         body {
             font-family: 'Racing Sans One', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #e3dbd3;
-            font-size: 80%;
+            font-size: 80%; /* Adjust the font size */
         }
 
         header {
@@ -27,107 +22,57 @@
             text-align: center;
             padding: 10px;
             font-family: 'Racing Sans One', sans-serif;
-            font-size: 1.8em;
+            font-size: 1.5em; /* Adjust the font size */
             letter-spacing: 4px;
             font-weight: 300;
             position: fixed;
             width: 100%;
             top: 0;
-            transition: opacity 0.5s;
-            z-index: 1;
         }
 
-        header.hidden {
-            opacity: 0;
-            pointer-events: none;
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 80px 20px 20px;
         }
 
-        .slick-slider {
-            width: 80%;
-            margin: 0 auto;
+        .gallery-item {
+            width: 30%;
+            margin: 10px;
             overflow: hidden;
-            padding: 20px 0;
-        }
-
-        .slick-slide {
-            margin: 0 20px;
-        }
-
-        .polaroid {
-            position: relative;
-            background: #fff;
-            padding: 20px;
             border: 1px solid #ddd;
+            border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
         }
 
-        .polaroid img {
+        .gallery-item img {
             width: 100%;
             height: auto;
             display: block;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-
-        .polaroid:hover {
-            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>ZOEY LESTYK</h1>
-        <h2>[portfolio]</h2>
+        <h1>Zoey Lestyk</h1>
+        <h2>[Portfolio]</h2>
     </header>
 
-    <section class="slick-slider">
-        <!-- Slick Carousel items go here -->
-        <div class="polaroid">
+    <section>
+        <!-- Gallery items go here -->
+        <div class="gallery-item">
             <img src="placeholder_image1.jpg" alt="Gallery Item 1">
-            <p>Item 1 Description</p>
         </div>
-        <div class="polaroid">
+        <div class="gallery-item">
             <img src="placeholder_image2.jpg" alt="Gallery Item 2">
-            <p>Item 2 Description</p>
         </div>
-        <div class="polaroid">
+        <div class="gallery-item">
             <img src="placeholder_image3.jpg" alt="Gallery Item 3">
-            <p>Item 3 Description</p>
         </div>
-        <!-- Add more polaroid items as needed -->
+        <!-- Add more gallery items as needed -->
     </section>
-
-    <!-- Include jQuery and Slick Carousel JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('.slick-slider').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '60px',
-                prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
-                nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var header = document.querySelector('header');
-
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 50) {
-                    header.classList.add('hidden');
-                } else {
-                    header.classList.remove('hidden');
-                }
-            });
-        });
-    </script>
 
 </body>
 </html>
